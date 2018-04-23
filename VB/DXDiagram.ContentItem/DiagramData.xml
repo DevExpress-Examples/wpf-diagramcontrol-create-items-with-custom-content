@@ -1,0 +1,13 @@
+﻿<XtraSerializer version="16.1.8.0">
+  <Items>
+    <Item1 ItemKind="DiagramRoot" SelectedStencils="CustomTools">
+      <Children>
+        <Item1 Position="130,220" Size="230,110" CustomStyleId_type="System.String" CustomStyleId="formattedTextContentItem" Angle="0" ItemKind="DiagramContentItem" />
+        <Item2 Position="410,380" Size="230,80" CustomStyleId_type="System.String" CustomStyleId="devExpressLogoContentItem" Angle="0" ItemKind="DiagramContentItem" />
+        <Item3 Position="690,490" Size="230,80" CustomStyleId_type="System.String" CustomStyleId="buttonContentItem" Angle="0" ItemKind="DiagramContentItem" />
+        <Item4 BeginItemPointIndex="1" EndItemPointIndex="0" Points="525,275" ItemKind="DiagramConnector" BeginItem="0" EndItem="1" BeginPoint="360,275" EndPoint="525,380" />
+        <Item5 BeginItemPointIndex="1" EndItemPointIndex="0" Points="805,420" ItemKind="DiagramConnector" BeginItem="1" EndItem="2" BeginPoint="640,420" EndPoint="805,490" />
+      </Children>
+    </Item1>
+  </Items>
+</XtraSerializer>

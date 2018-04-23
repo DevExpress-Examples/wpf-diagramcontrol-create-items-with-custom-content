@@ -1,0 +1,19 @@
+﻿<Window x:Class="DXDiagram.ContentItem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:dxdiag="http://schemas.devexpress.com/winfx/2008/xaml/diagram" 
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="1200">
+	<Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="DiagramResources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <dxdiag:DiagramDesignerControl Name="diagramControl" SelectedStencils="BasicShapes" />
+    </Grid>
+</Window>
