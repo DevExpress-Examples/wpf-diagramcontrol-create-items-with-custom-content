@@ -3,7 +3,7 @@
 
 * [DiagramResources.xaml](./CS/DXDiagram.ContentItem/DiagramResources.xaml) (VB: [DiagramResources.xaml](./VB/DXDiagram.ContentItem/DiagramResources.xaml))
 * **[MainWindow.xaml](./CS/DXDiagram.ContentItem/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/DXDiagram.ContentItem/MainWindow.xaml))**
-* [MainWindow.xaml.cs](./CS/DXDiagram.ContentItem/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/DXDiagram.ContentItem/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/DXDiagram.ContentItem/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/DXDiagram.ContentItem/MainWindow.xaml.vb))
 * [Model.cs](./CS/DXDiagram.ContentItem/Model.cs) (VB: [Model.vb](./VB/DXDiagram.ContentItem/Model.vb))
 <!-- default file list end -->
 # How to: Create Items with Custom Content in DiagramControl
