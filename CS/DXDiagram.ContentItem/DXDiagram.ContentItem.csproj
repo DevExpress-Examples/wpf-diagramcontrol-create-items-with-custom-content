@@ -71,7 +71,7 @@
     <Reference Include="DevExpress.Xpf.Ribbon.v16.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Printing.v16.2.Core">
+    <Reference Include="DevExpress.Printing.v16.1.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />
