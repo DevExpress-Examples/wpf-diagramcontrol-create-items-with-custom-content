@@ -18,26 +18,26 @@ Imports DevExpress.Mvvm.POCO
 
 Namespace DXDiagram.ContentItem
 
-    Partial Public Class MainWindow
-        Inherits Window
+	Partial Public Class MainWindow
+		Inherits Window
 
-        Public Sub New()
-            InitializeComponent()
-            RegisterContentItemTools()
-            LoadDiagram()
-        End Sub
+		Public Sub New()
+			InitializeComponent()
+			RegisterContentItemTools()
+			LoadDiagram()
+		End Sub
 
-        Private Sub RegisterContentItemTools()
-            Dim stencil As New DiagramStencil("CustomTools", "Content Item Tools")
-            stencil.RegisterTool(New FactoryItemTool("Text", Function() "Text", Function(diagram) New DiagramContentItem() With {.CustomStyleId = "formattedTextContentItem"}, New Size(230, 110), True))
-            stencil.RegisterTool(New FactoryItemTool("Logo", Function() "Logo", Function(diagram) New DiagramContentItem() With {.CustomStyleId = "devExpressLogoContentItem"}, New Size(230, 80), True))
-                stencil.RegisterTool(New FactoryItemTool("Action", Function() "Button", Function(diagram) New DiagramContentItem() With {.CustomStyleId = "buttonContentItem"}, New Size(230, 80), True))
-                DiagramToolboxRegistrator.RegisterStencil(stencil)
-        End Sub
+		Private Sub RegisterContentItemTools()
+			Dim stencil As New DiagramStencil("CustomTools", "Content Item Tools")
+			stencil.RegisterTool(New FactoryItemTool("Text", Function() "Text", Function(diagram) New DiagramContentItem() With {.CustomStyleId = "formattedTextContentItem"}, New Size(230, 110), True))
+			stencil.RegisterTool(New FactoryItemTool("Logo", Function() "Logo", Function(diagram) New DiagramContentItem() With {.CustomStyleId = "devExpressLogoContentItem"}, New Size(230, 80), True))
+				stencil.RegisterTool(New FactoryItemTool("Action", Function() "Button", Function(diagram) New DiagramContentItem() With {.CustomStyleId = "buttonContentItem"}, New Size(230, 80), True))
+				DiagramToolboxRegistrator.RegisterStencil(stencil)
+		End Sub
 
-        Private Sub LoadDiagram()
-            diagramControl.DocumentSource = "DiagramData.xml"
-            diagramControl.SelectedStencils = New StencilCollection(New String() { "CustomTools" })
-        End Sub
-    End Class
+		Private Sub LoadDiagram()
+			diagramControl.DocumentSource = "DiagramData.xml"
+			diagramControl.SelectedStencils = New StencilCollection(New String() { "CustomTools" })
+		End Sub
+	End Class
 End Namespace
