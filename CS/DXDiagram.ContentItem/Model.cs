@@ -10,7 +10,7 @@ namespace DXDiagram.ContentItem
     {
         public void ShowMessage()
         {
-            MessageBox.Show("This command has been created by our POCO machanism based on the ShowMessage method");
+            MessageBox.Show("This command has been created by our POCO mechanism based on the ShowMessage method");
         }
     }
 }
