@@ -1,8 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 16
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXDiagram.ContentItem", "DXDiagram.ContentItem\DXDiagram.ContentItem.csproj", "{D0BB9D3C-4566-460F-BC8B-4CA47BEA125E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXDiagram.ContentItem", "DXDiagram.ContentItem\DXDiagram.ContentItem.Net5.csproj", "{D0BB9D3C-4566-460F-BC8B-4CA47BEA125E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
