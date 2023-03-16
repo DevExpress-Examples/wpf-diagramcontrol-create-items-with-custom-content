@@ -1,7 +1,6 @@
-Imports System.Windows
-Imports System.Windows.Controls
 Imports DevExpress.Diagram.Core
 Imports DevExpress.Xpf.Diagram
+Imports System.Windows
 
 Namespace DXDiagram.ContentItem
 
@@ -16,9 +15,9 @@ Namespace DXDiagram.ContentItem
 
         Private Sub RegisterContentItemTools()
             Dim stencil As DiagramStencil = New DiagramStencil("CustomTools", "Content Item Tools")
-            stencil.RegisterTool(New FactoryItemTool("Text", Function() "Text", Function(diagram) New DiagramContentItem() With {.CustomStyleId = "formattedTextContentItem"}, New Size(230, 110), True))
-            stencil.RegisterTool(New FactoryItemTool("Logo", Function() "Logo", Function(diagram) New DiagramContentItem() With {.CustomStyleId = "devExpressLogoContentItem"}, New Size(230, 80), True))
-            stencil.RegisterTool(New FactoryItemTool("Action", Function() "Button", Function(diagram) New DiagramContentItem() With {.CustomStyleId = "buttonContentItem"}, New Size(230, 80), True))
+            stencil.RegisterTool(New FactoryItemTool(id:="Text", getName:=Function() "Text", createItem:=Function(diagram) New DiagramContentItem() With {.CustomStyleId = "formattedTextContentItem"}, defaultSize:=New Size(230, 110), isQuick:=True))
+            stencil.RegisterTool(New FactoryItemTool(id:="Logo", getName:=Function() "Logo", createItem:=Function(diagram) New DiagramContentItem() With {.CustomStyleId = "devExpressLogoContentItem"}, defaultSize:=New Size(230, 80), isQuick:=True))
+            stencil.RegisterTool(New FactoryItemTool(id:="Action", getName:=Function() "Button", createItem:=Function(diagram) New DiagramContentItem() With {.CustomStyleId = "buttonContentItem"}, defaultSize:=New Size(230, 80), isQuick:=True))
             DiagramToolboxRegistrator.RegisterStencil(stencil)
         End Sub
 
