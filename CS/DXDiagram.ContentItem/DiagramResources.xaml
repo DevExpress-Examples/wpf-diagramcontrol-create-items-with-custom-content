@@ -3,8 +3,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:dxdiag="http://schemas.devexpress.com/winfx/2008/xaml/diagram"
                     xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
-                    xmlns:local="clr-namespace:DXDiagram.ContentItem"
-                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                    xmlns:local="clr-namespace:DXDiagram.ContentItem">
 
     <Style x:Key="formattedTextContentItem" TargetType="dxdiag:DiagramContentItem">
         <Setter Property="Background" Value="#FF35779C"/>
@@ -12,7 +11,7 @@
             <Setter.Value>
                 <DataTemplate>
                     <TextBlock TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center" Margin="10">
-                             DiagramContentItem allows you to use custom content in diagram items. For example, you can use it for displaying 
+                        DiagramContentItem allows you to use custom content in diagram items. For example, you can use it to display 
                         <Run FontSize="14" Foreground="#FFF3F3A8" FontWeight="Bold">formatted</Run>
                         text.
                     </TextBlock>
@@ -30,8 +29,8 @@
                         <TextBlock Text="Item with several images" VerticalAlignment="Center" FontSize="20"/>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                             <Image Source="Images\DevExpressLogo.png" MaxHeight="32" Margin="5,0,0,0"/>
-                            <Image Source="Images\Globe.png" MaxHeight="32" />
-                            <Image Source="Images\Apply.png" MaxHeight="32" />
+                            <Image Source="Images\Globe.png" MaxHeight="32"/>
+                            <Image Source="Images\Apply.png" MaxHeight="32"/>
                         </StackPanel>
                     </StackPanel>
                 </DataTemplate>

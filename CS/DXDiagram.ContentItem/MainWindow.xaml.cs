@@ -1,20 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using DevExpress.Diagram.Core;
-using DevExpress.Xpf.Core;
+﻿using DevExpress.Diagram.Core;
 using DevExpress.Xpf.Diagram;
-using DevExpress.Mvvm.POCO;
+using System.Windows;
 
 namespace DXDiagram.ContentItem {
 
@@ -27,30 +13,39 @@ namespace DXDiagram.ContentItem {
 
         void RegisterContentItemTools() {
             DiagramStencil stencil = new DiagramStencil("CustomTools", "Content Item Tools");
+
             stencil.RegisterTool(new FactoryItemTool(
-                "Text",
-                () => "Text",
-                diagram => new DiagramContentItem() {
+                id: "Text",
+                getName: () => "Text",
+                createItem: diagram => new DiagramContentItem() {
                     CustomStyleId = "formattedTextContentItem"
                 },
-                new Size(230, 110), true));
+                defaultSize: new Size(230, 110), 
+                isQuick: true
+            ));
+
             stencil.RegisterTool(new FactoryItemTool(
-                "Logo",
-                () => "Logo",
-                diagram => new DiagramContentItem() {
+                id: "Logo",
+                getName: () => "Logo",
+                createItem: diagram => new DiagramContentItem() {
                     CustomStyleId = "devExpressLogoContentItem",
                 },
-                new Size(230, 80), true));
-                stencil.RegisterTool(new FactoryItemTool(
-                "Action",
-                () => "Button",
-                diagram => new DiagramContentItem()
-                {
+                defaultSize: new Size(230, 80),
+                isQuick: true
+            ));
+
+            stencil.RegisterTool(new FactoryItemTool(
+                id: "Action",
+                getName: () => "Button",
+                createItem: diagram => new DiagramContentItem() {
                     CustomStyleId = "buttonContentItem",
                 },
-                new Size(230, 80), true));
-                DiagramToolboxRegistrator.RegisterStencil(stencil);
-            }
+                defaultSize: new Size(230, 80),
+                isQuick: true
+            ));
+
+            DiagramToolboxRegistrator.RegisterStencil(stencil);
+        }
 
         void LoadDiagram() {
             diagramControl.DocumentSource = "DiagramData.xml";
