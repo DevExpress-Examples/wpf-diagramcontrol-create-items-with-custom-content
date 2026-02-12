@@ -69,7 +69,7 @@ To deserialize the `DiagramContentItem`, specify its `CustomStyleId` property
 * [Create Custom Diagram Containers and Register Them in the Toolbox and Ribbon Gallery](https://github.com/DevExpress-Examples/how-to-create-custom-diagram-containers-and-register-them-in-the-toolbox-and-ribbon-gallery-t466430)
 * [Create a DiagramShape Descendant with Editable and Serializable Properties](https://github.com/DevExpress-Examples/how-to-create-a-diagramshape-descendant-with-editable-and-serializable-properties-t395040)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-diagramcontrol-create-items-with-custom-content&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-diagramcontrol-create-items-with-custom-content&~~~was_helpful=no)
 
